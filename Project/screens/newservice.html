@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <style>
+        #header {
+            background-color:black;
+            color:white;
+            text-align:center;
+            padding:5px;
+        }
+        #nav {
+            line-height:30px;
+            background-color:#eeeeee;
+            height:300px;
+            width:100px;
+            float:left;
+            padding:5px;
+        }
+        #section {
+            width:350px;
+            float:left;
+            padding:10px;
+        }
+        #footer {
+            background-color:black;
+            color:white;
+            clear:both;
+            text-align:center;
+            padding:5px;
+        }
+
+        .row {
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 5px;
+        }
+    </style>
+
+
+</head>
+<body>
+
+<div id="header">
+    <h1>SPA</h1>
+</div>
+
+<div id="nav">
+    Home<br>
+    <a href="newuser.html">Users</a><br>
+    <a href="newservice.html">Service</a>
+
+    <br>
+</div>
+
+<div id="section">
+    <h1>New Service </h1>
+
+        <!--Form starts here-->
+        <form>
+            <div class="row">
+           <label>Service Name</label>
+           <input type="text" name="service_name">
+            </div>
+
+            <div class="row">
+            <label>Service Description</label>
+            <textarea name="service_description"></textarea>
+            </div>
+
+
+            <div class="row">
+                <label>Price</label>
+                <input type="text" name="service_price">
+            </div>
+
+
+
+
+            <div class="row">
+                <input type="radio" name="service_type" value="package" onclick="displayServices()"> Package
+                <input type="radio" name="service_type" value="service"> Service
+            </div>
+
+
+            <div class="row" id="services_list_div" style="display:block;">
+                <input type="checkbox" name="services" value="hair_cutting"> Hair Cutting
+                <input type="checkbox" name="services" value="facial"> Facial
+            </div>
+
+
+            <div class="row">
+            <input type="submit" value="Save">
+            </div>
+
+
+
+
+
+        </form>
+        <!--Form Ends here-->
+
+</div>
+
+<div id="footer">
+    Copyright © W3Schools.com
+</div>
+
+</body>
+</html>
