@@ -28,6 +28,12 @@
             text-align:center;
             padding:5px;
         }
+
+        .row {
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 5px;
+        }
     </style>
 
 
@@ -39,29 +45,34 @@
 </div>
 
 <div id="nav">
-
+    Home<br>
+    <a href="userlist.html">Users</a><br>
+    <a href="servicelist.html">Service</a>
+    <br>
 </div>
 
 <div id="section">
-    <h1>New User </h1>
+    <h1>Users </h1>
 
-        <!--Form starts here-->
-        <form>
-            First Name <input type="text" name="firstname"  id="firstname" > <br/>
-            Last Name <input type="text" name="lastname"  id="lastname" > <br/>
-            Gender
-            <input type="radio" name="gender" value="male">Male
-            <input type="radio" name="gender" value="female">Female
+    <a href="newuser.html">+ New User</a>
+    <!--Form starts here-->
+    <form>
+       <table border="1">
+           <tr>
+               <th>User ID</th>
+               <th>Name</th>
+               <th>Role</th>
+           </tr>
 
-            <br/>
-            DOB
-            <input type="text" name="dob"  id="dob" >
-            <br/>
 
-            <input type="submit">
-            <a href="userlist.html">Back to the list</a><br>
-        </form>
-        <!--Form Ends here-->
+           <tr>
+               <td>1</td>
+               <td>Alex Je</td>
+               <td>Employee</td>
+           </tr>
+       </table>
+    </form>
+    <!--Form Ends here-->
 
 </div>
 

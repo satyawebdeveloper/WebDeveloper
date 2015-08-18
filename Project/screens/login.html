@@ -28,6 +28,12 @@
             text-align:center;
             padding:5px;
         }
+
+        .row {
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 5px;
+        }
     </style>
 
 
@@ -43,23 +49,32 @@
 </div>
 
 <div id="section">
-    <h1>New User </h1>
+    <h1>Login </h1>
 
         <!--Form starts here-->
         <form>
-            First Name <input type="text" name="firstname"  id="firstname" > <br/>
-            Last Name <input type="text" name="lastname"  id="lastname" > <br/>
-            Gender
-            <input type="radio" name="gender" value="male">Male
-            <input type="radio" name="gender" value="female">Female
+            <div class="row">
+           <label>Username</label>
+           <input type="text" name="username">
+            </div>
 
-            <br/>
-            DOB
-            <input type="text" name="dob"  id="dob" >
-            <br/>
 
-            <input type="submit">
-            <a href="userlist.html">Back to the list</a><br>
+            <div class="row">
+                <label>Password</label>
+                <input type="text" name="password">
+            </div>
+
+
+
+
+            <div class="row">
+            <input type="submit" value="Login">
+            </div>
+
+
+            <a href="forgotpassword.html">Forgot Password</a><br>
+
+
         </form>
         <!--Form Ends here-->
 
