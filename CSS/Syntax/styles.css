@@ -1,0 +1,13 @@
+
+.heading{
+	color : #ff2222;
+    font-family: "Georgia", Times, serif;
+    font-size: 20px;
+    background-color: #000066;
+    text-align: center;
+}
+
+
+body{
+    background-image: url("http://www.w3schools.com/css/paper.gif");
+}
