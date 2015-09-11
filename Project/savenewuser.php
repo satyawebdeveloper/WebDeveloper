@@ -16,6 +16,11 @@ if(isset($_POST)){
     //query execute
     $mysqlconn->query($sqlQuery);
 
+
+    //saving user info into cookie
+    setcookie('username',$first_name);
+    setcookie('userfirstNLastName', $first_name.''.$last_name, time() + (86400 * 30), "/"); // 86400 = 1 day
+
     //mysql will returns the result
 
 }
