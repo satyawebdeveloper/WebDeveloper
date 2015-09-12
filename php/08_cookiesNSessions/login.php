@@ -6,6 +6,7 @@ if (isset($_POST['submit'])) {
 
     if ($username == "admin" && $password == "admin") {
         $_SESSION['username'] = $username;
+       
         header("Location: dashboard.php");
         exit ();
     } else {
